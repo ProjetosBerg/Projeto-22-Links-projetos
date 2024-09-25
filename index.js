@@ -2,9 +2,10 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 
-app.use(cors());
+app.use(cors({ origin: 'https://projeto-22-links-projetos-backend-8c10jgf92.vercel.app/' }));
+
 app.use(express.json());
-app.use(express.static("public"));
+
 
 require("./db/conn");
 
