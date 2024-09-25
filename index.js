@@ -10,9 +10,9 @@ require("./db/conn");
 
 const port =  3000;
 
-const memoryRoutes = require("./routes");
+const repositoyRoutes = require("./routes");
 
-app.use("/repositories", memoryRoutes);
+app.use("/repositories", repositoyRoutes);
 
 app.get('/', (req, res) => {
     return res.json("Hello word")
